@@ -22,7 +22,7 @@ public class DbInitializer
             return;
         }
 
-        var auctions = new List<Auction>();
+        var auctions = new List<Auction>()
         {
             // 1 Ford GT
             new Auction
@@ -202,7 +202,7 @@ public class DbInitializer
                     ImageUrl = "https://cdn.pixabay.com/photo/2017/08/02/19/47/vintage-2573090_960_720.jpg"
                 }
             }
-        }
+        };
 
         context.AddRange(auctions);
 
